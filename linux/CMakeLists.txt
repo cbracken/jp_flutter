@@ -1,8 +1,8 @@
 cmake_minimum_required(VERSION 3.10)
 project(runner LANGUAGES CXX)
 
-set(BINARY_NAME "scratch_flutter")
-set(APPLICATION_ID "com.example.scratch_flutter")
+set(BINARY_NAME "jp_flutter")
+set(APPLICATION_ID "com.example.jp_flutter")
 
 cmake_policy(SET CMP0063 NEW)
 
