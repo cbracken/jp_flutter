@@ -95,7 +95,8 @@ class _MyHomePageState extends State<MyHomePage> {
           crossAxisAlignment: CrossAxisAlignment.start,
           children: <Widget>[
             TextField(
-              style: TextStyle(fontFamily: 'IPAFont', fontSize: 18.0),
+              style: TextStyle(fontFamily: 'IPAFont', fontSize: 18.0),  // Japanese
+              // style: TextStyle(fontFamily: 'Nanum', fontSize: 18.0),    // Korean
               decoration: InputDecoration(
                 suffixIcon: Icon(Icons.send),
                 border: const OutlineInputBorder(),
