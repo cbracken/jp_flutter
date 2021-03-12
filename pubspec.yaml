@@ -55,4 +55,4 @@ flutter:
         - asset: fonts/ipag.ttf
     - family: Nanum
       fonts:
-        - asset: fonts/NanumGothic.ttf
+        - asset: fonts/NanumGothic-Regular.ttf
