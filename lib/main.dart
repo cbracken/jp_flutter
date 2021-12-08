@@ -94,6 +94,7 @@ class _MyHomePageState extends State<MyHomePage> {
           mainAxisAlignment: MainAxisAlignment.center,
           crossAxisAlignment: CrossAxisAlignment.start,
           children: <Widget>[
+            Text('Counter: $_counter'),
             TextField(
               style: TextStyle(fontFamily: 'IPAFont', fontSize: 18.0),  // Japanese
               // style: TextStyle(fontFamily: 'Nanum', fontSize: 18.0),    // Korean
