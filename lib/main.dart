@@ -97,7 +97,13 @@ class _MyHomePageState extends State<MyHomePage> {
             Text('Counter: $_counter'),
             TextField(
               style: TextStyle(fontFamily: 'IPAFont', fontSize: 18.0),  // Japanese
-              // style: TextStyle(fontFamily: 'Nanum', fontSize: 18.0),    // Korean
+              decoration: InputDecoration(
+                suffixIcon: Icon(Icons.send),
+                border: const OutlineInputBorder(),
+              ),
+            ),
+            TextField(
+              style: TextStyle(fontFamily: 'Nanum', fontSize: 18.0),    // Korean
               decoration: InputDecoration(
                 suffixIcon: Icon(Icons.send),
                 border: const OutlineInputBorder(),
