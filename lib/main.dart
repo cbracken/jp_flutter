@@ -56,6 +56,7 @@ class _MyHomePageState extends State<MyHomePage> {
       // _counter without calling setState(), then the build method would not be
       // called again, and so nothing would appear to happen.
       _counter++;
+      print('Counter incremented');
     });
   }
 
@@ -96,7 +97,23 @@ class _MyHomePageState extends State<MyHomePage> {
           children: <Widget>[
             TextField(
               style: TextStyle(fontFamily: 'IPAFont', fontSize: 18.0),  // Japanese
-              // style: TextStyle(fontFamily: 'Nanum', fontSize: 18.0),    // Korean
+              decoration: InputDecoration(
+                suffixIcon: Icon(Icons.send),
+                border: const OutlineInputBorder(),
+              ),
+            ),
+            TextField(
+              style: TextStyle(fontFamily: 'Nanum', fontSize: 18.0),    // Korean
+              decoration: InputDecoration(
+                suffixIcon: Icon(Icons.send),
+                border: const OutlineInputBorder(),
+              ),
+            ),
+            TextField(
+              style: TextStyle(fontFamily: 'IPAFont', fontSize: 18.0),  // Japanese
+              minLines: 2,
+              maxLines: 10,
+              textInputAction: TextInputAction.newline,
               decoration: InputDecoration(
                 suffixIcon: Icon(Icons.send),
                 border: const OutlineInputBorder(),
