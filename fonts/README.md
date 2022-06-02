@@ -1,1 +1,2 @@
-See the main README.md for details on extracting IPAfont here.
+To extract fonts here, run `tools/download_fonts.sh` from the root directory of
+this package.
