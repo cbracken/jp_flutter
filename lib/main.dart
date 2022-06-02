@@ -28,7 +28,7 @@ class MyApp extends StatelessWidget {
 }
 
 class MyHomePage extends StatefulWidget {
-  MyHomePage({Key key, this.title}) : super(key: key);
+  MyHomePage({Key? key, required this.title}) : super(key: key);
 
   // This widget is the home page of your application. It is stateful, meaning
   // that it has a State object (defined below) that contains fields that affect
@@ -96,7 +96,13 @@ class _MyHomePageState extends State<MyHomePage> {
           children: <Widget>[
             TextField(
               style: TextStyle(fontFamily: 'IPAFont', fontSize: 18.0),  // Japanese
-              // style: TextStyle(fontFamily: 'Nanum', fontSize: 18.0),    // Korean
+              decoration: InputDecoration(
+                suffixIcon: Icon(Icons.send),
+                border: const OutlineInputBorder(),
+              ),
+            ),
+            TextField(
+              style: TextStyle(fontFamily: 'Nanum', fontSize: 18.0),    // Korean
               decoration: InputDecoration(
                 suffixIcon: Icon(Icons.send),
                 border: const OutlineInputBorder(),
