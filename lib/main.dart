@@ -1,8 +1,30 @@
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
+import 'package:flutter/widgets.dart';
 
 void main() {
   runApp(MyApp());
 }
+
+//class IOSCompositionWidget extends StatelessWidget {
+//  const IOSCompositionWidget({super.key});
+//
+//  @override
+//  Widget build(BuildContext context) {
+//    // This is used in the platform side to register the view.
+//    const String viewType = 'FlutterNativeLabel';
+//
+//    // Pass parameters to the platform side.
+//    final Map<String, dynamic> creationParams = <String, dynamic>{};
+//
+//    return UiKitView(
+//      viewType: viewType,
+//      layoutDirection: TextDirection.ltr,
+//      creationParams: creationParams,
+//      creationParamsCodec: const StandardMessageCodec(),
+//    );
+//  }
+//}
 
 class MyApp extends StatelessWidget {
   // This widget is the root of your application.
@@ -106,6 +128,18 @@ class _MyHomePageState extends State<MyHomePage> {
               decoration: InputDecoration(
                 suffixIcon: Icon(Icons.send),
                 border: const OutlineInputBorder(),
+              ),
+            ),
+            //SizedBox(
+            //  height: 48,
+            //  child: IOSCompositionWidget(),
+            //),
+            Container(
+              decoration: BoxDecoration(border: Border.all(color: Colors.black)),
+              child: SizedBox(
+                width: 100,
+                height: 50,
+                child: Texture(textureId: 10),
               ),
             ),
           ],
